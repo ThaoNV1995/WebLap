@@ -1,0 +1,16 @@
+E:\Học tập\ASP.NET\WebLap\WebLap\bin\WebLap.dll.config
+E:\Học tập\ASP.NET\WebLap\WebLap\bin\WebLap.dll
+E:\Học tập\ASP.NET\WebLap\WebLap\bin\WebLap.pdb
+E:\Học tập\ASP.NET\WebLap\WebLap\obj\Release\WebLap.csprojResolveAssemblyReference.cache
+E:\Học tập\ASP.NET\WebLap\WebLap\obj\Release\WebLap.dll
+E:\Học tập\ASP.NET\WebLap\WebLap\obj\Release\WebLap.pdb
+F:\Học tập\ASP.NET\WebLap\WebLap\bin\WebLap.dll.config
+F:\Học tập\ASP.NET\WebLap\WebLap\bin\WebLap.dll
+F:\Học tập\ASP.NET\WebLap\WebLap\bin\WebLap.pdb
+F:\Học tập\ASP.NET\WebLap\WebLap\bin\CKEditor.NET.dll
+F:\Học tập\ASP.NET\WebLap\WebLap\bin\CKFinder.dll
+F:\Học tập\ASP.NET\WebLap\WebLap\bin\CKEditor.NET.pdb
+F:\Học tập\ASP.NET\WebLap\WebLap\bin\CKFinder.pdb
+F:\Học tập\ASP.NET\WebLap\WebLap\obj\Release\WebLap.csprojResolveAssemblyReference.cache
+F:\Học tập\ASP.NET\WebLap\WebLap\obj\Release\WebLap.dll
+F:\Học tập\ASP.NET\WebLap\WebLap\obj\Release\WebLap.pdb

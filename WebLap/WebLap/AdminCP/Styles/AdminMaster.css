@@ -1,0 +1,126 @@
+﻿body {
+        font-family: arial;
+}
+div#menu-account {
+    margin: auto;
+    width: 960px;
+    background: #F5F5EE;
+}
+
+div#banner-account {
+    background: #59D5E8;
+    height: 40px;
+    text-align: left;
+    border-radius: 12px;
+}
+
+    div#banner-account span {
+        line-height: 40px;
+        margin-left: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+div#menu-content {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.menu-child a {
+    color: #004CFF;
+    text-decoration: none;
+}
+
+    .menu-child a:hover {
+        text-decoration: underline;
+    }
+
+div#menu {
+    background: #0E43DA;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+    div#menu ul li {
+        list-style: none;
+        float: left;
+        padding-right: 20px;
+        text-align: center;
+        padding-left: 20px;
+    }
+
+        div#menu ul li:hover {
+            background: #00bfff;
+        }
+
+        div#menu ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+#clear {
+    clear: both;
+}
+
+div#left {
+    float: left;
+    background-color: #CCC;
+    width: 200px;
+    height: 576px;
+}
+
+div#content {
+    margin-left: 225px;
+    width: auto;
+}
+
+div#footer {
+    height: 100px;
+    background: #7A7C8A;
+}
+
+div#main ul li {
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+    div#main ul li a {
+        text-decoration: none;
+        color: #3A5AFD;
+    }
+
+        div#main ul li a:hover {
+            text-decoration: underline;
+        }
+
+div#addnews {
+    padding-top: 16px;
+}
+
+div#footer p {
+    line-height: 100px;
+}
+
+div#paging {
+    background: #A7A5CC;
+    padding: 0px 516px;
+}
+
+    div#paging a {
+        padding-left: 11px;
+        text-decoration: none;
+    }
+
+        div#paging a:hover {
+            text-decoration: underline;
+        }
+
+
+input#ctl03_btnAdd {
+    margin: 15px 0px;
+}

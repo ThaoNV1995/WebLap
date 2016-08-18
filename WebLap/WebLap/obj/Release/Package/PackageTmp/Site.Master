@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebLap.Site" %>
+
+<%@ Register Src="Controls/HotNews.ascx" TagName="HotNews" TagPrefix="uc1" %>
+
+<%@ Register Src="Controls/CateNews.ascx" TagName="CateNews" TagPrefix="uc2" %>
+<%@ Register Src="~/Controls/HitCount.ascx" TagPrefix="uc1" TagName="HitCount" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Styles/HomeMaster.css" rel="stylesheet" />
+    <link href="Styles/HomeS.css" rel="stylesheet" />
+    <link href="Styles/Master.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/Master.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header">
+            <div id="banner">
+                <img src="Upload/images/news/TH_Web.jpg" />
+            </div>
+            <div id="menu">
+                <ul>
+                    <asp:Repeater ID="rptParent" runat="server" OnItemDataBound="rptParent_ItemDataBound">
+                        <ItemTemplate>
+                            <li><a href='<%#Eval("CateUrl") %>'><%#Eval("CateName") %></a>
+                                <asp:HiddenField ID="hdCateID" Value='<%#Eval("CateID") %>' runat="server" />
+                                <ul>
+                                    <asp:Repeater ID="rptChild" runat="server">
+                                        <ItemTemplate>
+                                            <li><a href='<%#Eval("CateUrl") %>'><%#Eval("CateName") %></a></li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </ul>
+                            </li>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </ul>
+                <div id="login-registe">
+                </div>
+            </div>
+
+            <div id="sitemap"></div>
+        </div>
+        <div id="main">
+            <div id="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div id="right">
+
+                <div id="login-regis">
+                    <asp:Panel ID="plogin" runat="server">
+                        <%-- <asp:LinkButton ID="lgLogin" runat="server" OnClick="lgLogin_Click">Đăng nhập</asp:LinkButton>--%>
+
+                        <a id="a-login">Đăng nhập</a>
+                        <asp:LinkButton ID="lbRegister" runat="server" OnClick="lbRegister_Click">Đăng ký</asp:LinkButton>
+                    </asp:Panel>
+                    <asp:Panel ID="plogout" runat="server">
+                        <asp:LinkButton ID="lbName" runat="server" OnClick="lbName_Click">Xin chào:</asp:LinkButton>
+                        <asp:LinkButton ID="lbLogout" runat="server" OnClick="lbLogout_Click">logout</asp:LinkButton>
+                    </asp:Panel>
+                </div>
+                <div id="title-rigth">
+                    <p>TIÊU ĐIỂM </p>
+                </div>
+                <div id="content-rigth">
+                    <uc1:HotNews ID="HotNews2" runat="server" />
+                </div>
+                <div id="online">
+                    <div id="title-rigth">
+                        <p>LƯỢT TRUY CẬP</p>
+                    </div>
+                    <uc1:HitCount runat="server" ID="HitCount" />
+                </div>
+
+            </div>
+            <div id="partner"></div>
+
+        </div>
+        <div id="footer">
+            <center>
+            <div id="nav">
+                <span>Bản quyền thuộc về trung tâm phát triển phần mềm SEVN</span>
+            </div>
+            <div id="copyright">
+                <span>Địa chỉ: Mỹ Hào - Hưng Yên</span>
+            </div>
+                </center>
+        </div>
+        <div id="login-form">
+            <div id="input">
+                <div id="input-user">
+                    <asp:TextBox ID="txtUser" runat="server" placeholder="Tài khoản"></asp:TextBox>
+                </div>
+                <div id="input-pass">
+                    <asp:TextBox ID="txtPass" runat="server" TextMode="Password" placeholder="Mật khẩu"></asp:TextBox>
+                </div>
+            </div>
+            <div id="eButtons">
+                <asp:Button ID="btnLogin" runat="server" Text="Đăng nhập" OnClick="btnLogin_Click" />
+            </div>
+        </div>
+        <div id="full"></div>
+    </form>
+</body>
+</html>
